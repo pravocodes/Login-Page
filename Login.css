@@ -1,0 +1,1016 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'outfit', sans-serif;
+}
+
+/* .video {
+
+    position: fixed;
+    object-fit: cover;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+} */
+
+
+
+/* #login-form {
+    display: none;
+} */
+.button-box {
+    width: 221px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px rgba(223, 214, 236, 0.235);
+    border-radius: 30px;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: #03e9f4;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.input-group-login {
+
+    transition: .5s;
+}
+
+.input-group-register {
+
+    transition: .5s;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #fff;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+/* .input-group-login {
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-group-register {
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+} */
+
+.login-page {
+
+    position: absolute;
+    top: 43%;
+    height: 600px;
+    left: 50%;
+    width: 500px;
+    border-top: 0px;
+    margin-top: 0px;
+    padding: 10px 70px 70px 70px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.292);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.login-page h1 {
+    margin: 0 0 30px;
+    text-align: center;
+    padding: 0;
+    color: #fff;
+}
+
+.login-page .user-box {
+    position: relative;
+}
+
+.login-page .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-page .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-page .user-box input:focus~label,
+.login-page .user-box input:valid~label {
+    top: -25px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 16px;
+}
+
+.Forgot-pass {
+    float: right;
+    font-size: 16px;
+    color: #5b6b8b;
+    text-decoration: none;
+}
+
+.sign {
+    float: left;
+    font-size: 16px;
+    color: #5b6b8b;
+    text-decoration: none;
+}
+
+.submit {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-left: 130px;
+    letter-spacing: 4px;
+}
+
+.submit:hover {
+    background: #03e9f4;
+    color: rgb(10, 11, 21);
+    border-radius: 5px;
+}
+
+/* #login {
+    left: 50px;
+}
+
+
+
+#register {
+    left: 450px;
+} */
+
+
+.submit span {
+    position: absolute;
+    display: block;
+}
+
+.submit span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.submit span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(100deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.submit span:nth-child(3) {
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.submit span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.btn-size img {
+    height: 50px;
+    width: 50px;
+    border: none;
+
+    background: none;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0;
+}
+
+.line1 {
+    width: 175px;
+
+    position: absolute;
+    top: 430px;
+    left: 3px;
+
+}
+
+.line2 {
+    width: 166px;
+
+    position: absolute;
+    top: 430px;
+    right: 3px;
+}
+
+.line3 {
+    width: 175px;
+
+    position: absolute;
+    top: 480px;
+    left: 3px;
+}
+
+.line4 {
+    width: 166px;
+
+    position: absolute;
+    top: 480px;
+    right: 3px;
+}
+
+.input-group-login p {
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 411px;
+    left: 200px;
+
+}
+
+.input-group-register p {
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 461px;
+    left: 200px;
+}@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'outfit', sans-serif;
+}
+
+.video {
+
+    position: fixed;
+    object-fit: cover;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+}
+
+.back-vid {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+    pointer-events: none;
+    position: fixed;
+    width: 100%;
+}
+
+/* #login-form {
+    display: none;
+} */
+.button-box {
+    width: 221px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px rgba(223, 214, 236, 0.235);
+    border-radius: 30px;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: #03e9f4;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.input-group-login {
+
+    transition: .5s;
+}
+
+.input-group-register {
+
+    transition: .5s;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #fff;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+/* .input-group-login {
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-group-register {
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+} */
+
+.login-page {
+
+    position: absolute;
+    top: 43%;
+    height: 600px;
+    left: 50%;
+    width: 500px;
+    border-top: 0px;
+    margin-top: 0px;
+    padding: 10px 70px 70px 70px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.292);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.login-page h1 {
+    margin: 0 0 30px;
+    text-align: center;
+    padding: 0;
+    color: #fff;
+}
+
+.login-page .user-box {
+    position: relative;
+}
+
+.login-page .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-page .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-page .user-box input:focus~label,
+.login-page .user-box input:valid~label {
+    top: -25px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 16px;
+}
+
+.Forgot-pass {
+    float: right;
+    font-size: 16px;
+    color: #5b6b8b;
+    text-decoration: none;
+}
+
+.sign {
+    float: left;
+    font-size: 16px;
+    color: #5b6b8b;
+    text-decoration: none;
+}
+
+.submit {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-left: 130px;
+    letter-spacing: 4px;
+}
+
+.submit:hover {
+    background: #03e9f4;
+    color: rgb(10, 11, 21);
+    border-radius: 5px;
+}
+
+#login {
+    left: 50px;
+}
+
+
+
+#register {
+    left: 450px;
+}
+
+
+.submit span {
+    position: absolute;
+    display: block;
+}
+
+.submit span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.submit span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(100deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.submit span:nth-child(3) {
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.submit span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.btn-size img {
+    height: 50px;
+    width: 50px;
+    border: none;
+
+    background: none;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0;
+}
+
+.line1 {
+    width: 175px;
+
+    position: absolute;
+    top: 430px;
+    left: 3px;
+
+}
+
+.line2 {
+    width: 166px;
+
+    position: absolute;
+    top: 430px;
+    right: 3px;
+}
+
+.line3 {
+    width: 175px;
+
+    position: absolute;
+    top: 480px;
+    left: 3px;
+}
+
+.line4 {
+    width: 166px;
+
+    position: absolute;
+    top: 480px;
+    right: 3px;
+}
+
+.input-group-login p {
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 411px;
+    left: 200px;
+
+}
+
+.input-group-register p {
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 461px;
+    left: 200px;
+}@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'outfit', sans-serif;
+}
+
+.video {
+
+    position: fixed;
+    object-fit: cover;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+}
+
+.back-vid {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+    pointer-events: none;
+    position: fixed;
+    width: 100%;
+}
+
+/* #login-form {
+    display: none;
+} */
+.button-box {
+    width: 221px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px rgba(223, 214, 236, 0.235);
+    border-radius: 30px;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: #03e9f4;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.input-group-login {
+
+    transition: .5s;
+}
+
+.input-group-register {
+
+    transition: .5s;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #fff;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.login-page {
+
+    position: absolute;
+    top: 43%;
+    height: 600px;
+    left: 50%;
+    width: 500px;
+    border-top: 0px;
+    margin-top: 0px;
+    padding: 10px 70px 70px 70px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.292);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.login-page h1 {
+    margin: 0 0 30px;
+    text-align: center;
+    padding: 0;
+    color: #fff;
+}
+
+.login-page .user-box {
+    position: relative;
+}
+
+.login-page .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-page .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-page .user-box input:focus~label,
+.login-page .user-box input:valid~label {
+    top: -25px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 16px;
+}
+
+.Forgot-pass {
+    float: right;
+    font-size: 16px;
+    color: #5b6b8b;
+    text-decoration: none;
+}
+
+.sign {
+    float: left;
+    font-size: 16px;
+    color: #5b6b8b;
+    text-decoration: none;
+}
+
+.submit {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-left: 130px;
+    letter-spacing: 4px;
+}
+
+.submit:hover {
+    background: #03e9f4;
+    color: rgb(10, 11, 21);
+    border-radius: 5px;
+}
+
+#login {
+    left: 50px;
+}
+
+
+
+#register {
+    left: 450px;
+}
+
+
+.submit span {
+    position: absolute;
+    display: block;
+}
+
+.submit span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.submit span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(100deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.submit span:nth-child(3) {
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.submit span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.btn-size img {
+    height: 50px;
+    width: 50px;
+    border: none;
+
+    background: none;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0;
+}
+
+.line1 {
+    width: 175px;
+
+    position: absolute;
+    top: 430px;
+    left: 3px;
+
+}
+
+.line2 {
+    width: 166px;
+
+    position: absolute;
+    top: 430px;
+    right: 3px;
+}
+
+.line3 {
+    width: 175px;
+
+    position: absolute;
+    top: 480px;
+    left: 3px;
+}
+
+.line4 {
+    width: 166px;
+
+    position: absolute;
+    top: 480px;
+    right: 3px;
+}
+
+.input-group-login p {
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 411px;
+    left: 200px;
+
+}
+
+.input-group-register p {
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 461px;
+    left: 200px;
+}
